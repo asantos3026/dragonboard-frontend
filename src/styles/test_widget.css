@@ -1,0 +1,13 @@
+.test-widget {
+  border: 2px solid red;
+}
+
+.green-cloud {
+  margin-left: 10px;
+  color: rgb(0, 255, 0);
+}
+
+.blue-cloud {
+  margin-left: 10px;
+  color: rgb(0, 0, 255);
+}
