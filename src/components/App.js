@@ -1,22 +1,19 @@
 import React, { Component } from 'react'
 import Dashboard from './Dashboard'
-import {Provider, connect} from 'react-redux'
-import {createStore} from 'redux'
-import reducer from '../reducers/root'
+import {connect} from 'react-redux'
+import {toggleCloud} from '../actions/dashboard'
 import '../styles/button.css'
 
-const initialState = {cloudColor: 'green'}
-
-const store = createStore(reducer, initialState)
-
 class App extends Component {
+  toggleCloud() {
+    this.props.dispatch(toggleCloud())
+  }
+
   render() {
     return (
-      <Provider store={store}>
-        <div className="home-page">
-          <Dashboard/>
-        </div>
-      </Provider>
+      <div className="home-page">
+        <Dashboard toggleCloud={this.toggleCloud.bind(this)} />
+      </div>
     )
   }
 }

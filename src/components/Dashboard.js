@@ -7,9 +7,9 @@ class Dashboard extends Component {
   render() {
     return (
       <div className="dashboard-home">
-        <DashNav/>
-        <LocalNav/>
-        <DashBody/>
+        <DashNav />
+        <LocalNav />
+        <DashBody toggleCloud={this.props.toggleCloud} />
       </div>
     )
   }

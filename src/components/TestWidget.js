@@ -6,7 +6,7 @@ class TestWidget extends Component {
     return (
       <div className="test-widget">
         This is a test widget that has state. See, click on this cloud ->
-        <span className="green-cloud">{'\u2601'}</span>
+        <span onClick={this.props.toggleCloud} className="green-cloud">{'\u2601'}</span>
       </div>
     )
   }
