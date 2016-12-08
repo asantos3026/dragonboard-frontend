@@ -6,7 +6,7 @@ import Icons from './Icons'
 class HomeBody extends Component {
   render () {
     return (
-      <div className='home-main'>
+      <div className='main-content'>
         <Overlay />
         <section className='quotes'>
           <div className='quotes-container'>

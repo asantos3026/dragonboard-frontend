@@ -1,10 +1,10 @@
-.home-main {
+.main-content {
   height: 1200px;
   width: 100%;
   margin: auto;
 }
 
-.home-page {
+.wrapper {
   font-family: 'Questrial', sans-serif;
   font-style: normal;
   font-weight: 500;

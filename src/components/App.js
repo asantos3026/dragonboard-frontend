@@ -10,7 +10,7 @@ import HomeFooter from './HomeFooter'
 class App extends Component {
   render () {
     return (
-      <div className='home-page'>
+      <div className='wrapper'>
         <HomeNav />
         <HomeBody />
         <HomeFooter />
