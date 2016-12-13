@@ -6,7 +6,7 @@ class Text extends Component {
   render() {
     // eslint-disable-next-line
     const { title, size, x, y, message } = this.props
-    const positionStyle = { top: y, left: x }
+    const positionStyle = { top: x, left: y }
 
     return (
       <article>
