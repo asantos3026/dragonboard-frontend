@@ -1,12 +1,16 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { Router, Route, hashHistory } from 'react-router'
+
 import App from './components/App'
+import DashboardBody from './components/DashboardBody'
+
 import './styles/index.css'
 
-import { Router, Route, hashHistory } from 'react-router'
 
 ReactDOM.render((
   <Router history={hashHistory}>
     <Route path='/' component={App} />
+    <Route path='/dashboard' component={DashboardBody} />
   </Router>
 ), document.getElementById('root'))
