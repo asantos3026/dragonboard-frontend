@@ -1,13 +1,13 @@
-import React, { Component } from 'react'
-import "../../styles/widget/widget.css"
+import React from 'react'
+import '../../styles/widget/widget.css'
 
-const FooterButton = (props) => {
+const FooterButton = () => {
   return (
-    <div className="">
-      {logo}
-    </div>
+    <img
+      className='widget-footer-dots'
+      src='images/widgets-icons/vertical-dots-icon.png'
+    />
   )
 }
-
 
 export default FooterButton

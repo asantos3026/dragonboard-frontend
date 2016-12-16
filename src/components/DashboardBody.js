@@ -50,6 +50,7 @@ const dashboardBodyProps = {
     //   url: 'http://www.easypano.com/images/pw/v3/banner.jpg'
     // },
     {
+      group: 'CSV',
       type: 'Leaderboard',
       title: 'Leaderboard',
       size: '1x2',
@@ -60,7 +61,9 @@ const dashboardBodyProps = {
       label_column_data: ['Carla', 'Aileen', 'Sylvan', 'Your mom', 'Donald Trump'],
       number_column: 'B - Elo',
       number_column_data: [1100, 1025, 1010, 1020, -1000000000],
-      order_by: 'largest-first'
+      order_by: 'largest-first',
+      update_data: true,
+      icon_path:'images/widgets-icons/csv-icon.png'
     }
   ]
 }
