@@ -3,6 +3,8 @@ import Text from './widgets/dashboard-tools/Text'
 import Image from './widgets/dashboard-tools/Image'
 import QRCode from './widgets/dashboard-tools/QRCode'
 import Clock from './widgets/dashboard-tools/Clock'
+import Leaderboard from './widgets/csv/Leaderboard/Leaderboard'
+
 import '../styles/dash_body.css'
 
 const dashboardBodyProps = {
@@ -39,14 +41,27 @@ const dashboardBodyProps = {
       country: 'United States',
       city: 'Los Angeles'
     },
+    // {
+    //   type: 'QRCode',
+    //   title: 'QR Code',
+    //   size: '1x1',
+    //   x: '10px',
+    //   y: '580px',
+    //   url: 'http://www.easypano.com/images/pw/v3/banner.jpg'
+    // },
     {
-      type: 'QRCode',
-      title: 'QR Code',
-      size: '1x1',
+      type: 'Leaderboard',
+      title: 'Leaderboard',
+      size: '1x2',
       x: '10px',
       y: '580px',
-      url: 'http://www.easypano.com/images/pw/v3/banner.jpg'
-    },
+      csv_url: 'http://hdacentral.com/sylvan/banana-pudding-cake.csv',
+      label_column: 'A',
+      label_column_data: ['Carla', 'Aileen', 'Sylvan', 'Your mom', 'Donald Trump'],
+      number_column: 'B - Elo',
+      number_column_data: [1100, 1025, 1010, 1020, -1000000000],
+      order_by: 'largest-first'
+    }
   ]
 }
 const BuildWidgets = widgetArray =>
@@ -55,7 +70,8 @@ const BuildWidgets = widgetArray =>
       'Text': <Text { ...widget } key={ widget.title } />,
       'Image': <Image { ...widget } key={ widget.title } />,
       'QRCode': <QRCode { ...widget } key={ widget.title } />,
-      'Clock': <Clock { ...widget } key={ widget.title } />
+      'Clock': <Clock { ...widget } key={ widget.title } />,
+      'Leaderboard': <Leaderboard { ...widget } key={ widget.title } />
     }[ widget.type ]))
 
 class DashboardBody extends Component {

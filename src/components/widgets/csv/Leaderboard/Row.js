@@ -1,4 +1,12 @@
 import React from 'react'
-import "../../../styles/widget/csv/row.css" 
+import "../../../../styles/widget/csv/row.css" 
 
-// Stateless Functional Component Row goes here
+const Row = (props) => {
+  return(
+    <div>
+      row here
+    </div>
+  )
+}
+
+export default Row
