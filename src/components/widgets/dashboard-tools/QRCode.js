@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
-import "../../styles/widget/widget.css"
+import "../../../styles/widget/widget.css"
 import QRCodeImage from './QRCodeImage'
-import Header from './Header'
+import Header from '../Header'
 
 class QRCode extends Component {
   render() {
-    const { title, x, y, size, url } = this.props
+    const { title, x, y, url } = this.props
     const positionStyle = { top: x, left: y }
 
     return (

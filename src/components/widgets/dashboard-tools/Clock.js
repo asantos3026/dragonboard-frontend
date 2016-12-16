@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import "../../styles/widget/widget.css"
-import "../../styles/widget/clock.css"
+import "../../../styles/widget/widget.css"
+import "../../../styles/widget/clock.css"
 import moment from 'moment'
-import Header from './Header'
+import Header from '../Header'
 
 class Clock extends Component {
   constructor( props ) {
@@ -39,7 +39,7 @@ class Clock extends Component {
   }
 
   render() {
-    const { title, x, y, format } = this.props
+    const { title, x, y } = this.props
     const positionStyle = { top: x, left: y }
 
     return (

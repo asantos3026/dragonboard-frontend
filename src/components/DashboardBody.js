@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import Text from './widgets/Text'
-import Image from './widgets/Image'
-import QRCode from './widgets/QRCode'
-import Clock from './widgets/Clock'
+import Text from './widgets/dashboard-tools/Text'
+import Image from './widgets/dashboard-tools/Image'
+import QRCode from './widgets/dashboard-tools/QRCode'
+import Clock from './widgets/dashboard-tools/Clock'
 import '../styles/dash_body.css'
 
 const dashboardBodyProps = {
