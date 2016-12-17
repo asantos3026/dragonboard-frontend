@@ -5,6 +5,39 @@
   background-color: #2a2a2a;
 }
 
+.widget:hover .widget-footer, .widget *:hover .widget-footer {
+  opacity: 1;
+}
+
+.widget-footer {
+  display: flex;
+  opacity: 0;
+  margin-top: auto;
+  justify-content: flex-end;
+  padding: 5px;
+  background-color: #1f1f1f;
+  transition: opacity 0.2s;
+}
+
+.widget-popover-container:first-child {
+  margin-right: auto;
+}
+
+.widget-footer img {
+  height: 24px;
+  width: 24px;
+}
+
+.widget-footer .widget-popover-container:nth-child(2) img {
+  padding-top: 3px;
+  height: 17px;
+  width: 17px;
+}
+
+.widget-popover {
+  display: none;
+}
+
 .widget-logo {
   width: 24px;
   height: 24px;
@@ -27,7 +60,7 @@ header {
   height: 23px;
   padding: 12px 14px 6px 14px;
   top: 0;
-  background-color: #4d4f50;
+  background-color: #2a2a2a;
 }
 
 .flex-center {
